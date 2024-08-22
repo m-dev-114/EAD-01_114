@@ -1,63 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <title>SignUp Page</title>
+</head> 
 <body>
-    <div class="container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-                <div class="error" id="usernameError"></div>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <div class="error" id="passwordError"></div>
-            </div>
-            <div class="form-group">
-                <label for="retypePassword">Retype Password</label>
-                <input type="password" id="retypePassword" name="retypePassword" required>
-                <div class="error" id="retypePasswordError"></div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error" id="emailError"></div>
-            </div>
-            <div class="form-group">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select...</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-                <div class="error" id="genderError"></div>
-            </div>
-            <div class="form-group">
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" name="dob" required>
-                <div class="error" id="dobError"></div>
-            </div>
-            <div class="checkbox-group">
-                <label>
-                    <input type="checkbox" id="agree" name="agree" required>
-                    I agree to the terms and conditions
-                </label>
-                <div class="error" id="agreeError"></div>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+    <div class="login-container"> 
+        <h2>SignUp Page</h2>
+        <form >
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="rollnumber">Roll Number: </label>
+            <input type="text" id="rollnumber" name="rollnumber" maxlength="12" pattern="\d{12}" required>
+            <br><br>
+            <label for="phoneno">Phone Number: </label>
+            <input type="number" id="phoneno" name="phoneno" required>
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not-to-say">Prefer Not To Say</option>
+            </select>
+            <br><br>
+            <button type="submit">Sign Up</button>
 
-    
+        </form>
+
+    </div>
 </body>
 </html>
