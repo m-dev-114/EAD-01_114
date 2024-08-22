@@ -1,69 +1,70 @@
-body {
+body{
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-image: url('bg.jpg');
+    
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.login-container{
+    background-color: rgba(17, 10, 10, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2{
     margin: 0;
-    background-color: #f4f4f4;
+    padding-bottom: 20px;
+    color: whitesmoke; 
 }
 
-.container {
-    background-color: white;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-h2 {
-    margin-bottom: 1em;
-}
-
-.form-group {
-    margin-bottom: 1em;
-}
-
-.form-group label {
+label{
+    font-family: 14px;
+    margin-bottom: 5px;
     display: block;
-    margin-bottom: 0.5em;
+    text-align: left;
+    color: whitesmoke;
 }
 
-.form-group input, .form-group select {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select{
     width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
+    padding: 6px;
+    margin-bottom: 2%;
+    border: 1px solid whitesmoke;
     border-radius: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: whitesmoke;
 }
 
-.checkbox-group {
-    margin-bottom: 1em;
+option{
+    background-color: rgba(58, 22, 93, 0.725);
+    color: whitesmoke;
 }
 
-.checkbox-group label {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-group input {
-    margin-right: 0.5em;
-}
-
-.form-group button {
+button{
     width: 100%;
-    padding: 0.5em;
-    background-color: #28a745;
+    padding: 6px;
+    background-color: #FDBD4E;
     border: none;
-    color: white;
     border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.form-group button:hover {
-    background-color: #218838;
-}
-
-.error {
-    color: red;
-    font-size: 0.875em;
+button:hover{
+    background-color: #734563d7;
 }
